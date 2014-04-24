@@ -17,7 +17,7 @@
   <u style="opacity: .3">inline style</u>
   <q>imported style</q>
   <p>No style</p>
-  <code>getElementsByStyle(function (style) { return 'opacity' in style })</code>
+  <code>getElementsByStyle(function (style) { return parseFloat(style.opacity) &lt; 1 })</code>
   results:<br>
   <textarea id="result" cols="80" rows="10"></textarea>
   <script src="getElementsByStyle.js"></script>
