@@ -19,10 +19,10 @@ void function (window, document) {
               var elements = document.querySelectorAll(rule.selectorText)
               result = result.concat(slice.call(elements))
             }
-          break;
+          break
           case CSSRule.IMPORT_RULE:
             matchStyleSheet(rule.styleSheet)
-          break;
+          break
         }
       })
 
