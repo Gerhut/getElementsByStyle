@@ -14,13 +14,13 @@ void function (window, document) {
 
       forEach.call(styleSheet.cssRules, function (rule) {
         switch (rule.type) {
-          case CSSRule.STYLE_RULE:
+          case rule.STYLE_RULE:
             if (matcher(rule.style)) {
               var elements = document.querySelectorAll(rule.selectorText)
               result = result.concat(slice.call(elements))
             }
           break
-          case CSSRule.IMPORT_RULE:
+          case rule.IMPORT_RULE:
             matchStyleSheet(rule.styleSheet)
           break
         }
