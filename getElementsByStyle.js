@@ -1,4 +1,8 @@
+/*jshint asi: true */
+
 void function (window, document) {
+  "use strict";
+  
   function getElementsByStyle(matcher) {
     var result = []
     var forEach = result.forEach
